@@ -19,7 +19,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+> important not to do any changes directly to the CSS folder all the changes should happen to the SCSS folder, everything is separated and organized there so that it is easy to maintain.
 ### The challenge
 
 Users should be able to:

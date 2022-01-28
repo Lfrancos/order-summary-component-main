@@ -64,7 +64,135 @@ img {
   width: 100%;
 }
 
+.card {
+  overflow: hidden;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2 / 2;
+  background: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: -10px 30px 70px #7280a7;
+          box-shadow: -10px 30px 70px #7280a7;
+}
+
+.card .flex {
+  margin: 50px auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card h1 {
+  font-size: 28px;
+  color: #1f2f56;
+}
+
+.card p {
+  margin: 30px auto;
+  text-align: center;
+  color: #7280a7;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.card .price {
+  width: 100%;
+  padding: 20px;
+  border-radius: .5rem;
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .price p {
+  margin: 10px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.card .price .light {
+  margin: 0;
+  color: #7280a7;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .price a {
+  font-weight: lighter;
+  color: #3829e0;
+  text-decoration: underline;
+}
+
+.card .price a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.card .price .dark {
+  color: #1f2f56;
+}
+
+.card .price .music {
+  height: 100%;
+}
+
+.card button {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #3829e0;
+  color: white;
+  padding: 15px;
+  border: 0;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 7px 30px -10px #766CF1, 0 20px 40px -20px #766CF1, 0 20px 60px -10px #766CF1;
+          box-shadow: 0 7px 30px -10px #766CF1, 0 20px 40px -20px #766CF1, 0 20px 60px -10px #766CF1;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: #766CF1;
+}
+
+.card .cancel {
+  color: #7280a7;
+  font-weight: 400;
+}
+
+.card .cancel:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+
+.attribution {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: 4/2;
+}
+
 body {
+  font-family: "Red Hat Display", sans-serif;
   height: 100vh;
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: #e0e8ff;
@@ -73,31 +201,12 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr minmax(567px, 697px) 1fr 30px;
-  -ms-grid-columns: 1fr minmax(320px, 450px) 1fr;
-      grid-template: 1fr minmax(567px, 697px) 1fr 30px/1fr minmax(320px, 450px) 1fr;
+  -ms-grid-columns: minmax(15px, auto) minmax(250px, 450px) minmax(15px, auto);
+      grid-template: 1fr minmax(567px, 697px) 1fr 30px/minmax(15px, auto) minmax(250px, 450px) minmax(15px, auto);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-img {
-  overflow: hidden;
-}
-
-.card {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: 2 / 2;
-  width: nimmax(327px, 450px);
-  background: white;
-  border-radius: 1rem;
-}
-
-.attribution {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: 4/2;
 }
 /*# sourceMappingURL=main.css.map */

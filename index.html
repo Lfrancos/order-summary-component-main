@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,21 +19,25 @@
 
   <div class="card">
     <img src="./images/illustration-hero.svg" alt="##">
-    <h1>Order Summary</h1>
-    <p>
-      You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!
-    </p>
-    <div class="price">
-      <img src="" alt="">
-      <div>
-        Annual Plan
-        $59.99/year
+    <div class="flex">
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div class="price">
+        <span class="light">
+          <img class="music" src="./images/icon-music.svg" alt="">
+          <span>
+            <p class="dark">Annual Plan</p>
+            <p>$59.99/year</p>
+          </span>
+        </span>
+        <a href="">Change</a>
       </div>
-      <a href="">Change</a>
+      <button>Proceed to Payment</button>
+      <p class="cancel">Cancel Order</p>
     </div>
-    <button>Proceed to Payment</button>
-    <p>Cancel Order</p>
   </div>
 
   <div class="attribution">
