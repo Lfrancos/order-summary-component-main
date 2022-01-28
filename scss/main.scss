@@ -1,0 +1,29 @@
+@import './resets';
+@import './variables';
+
+
+
+body {
+    height: 100vh;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-color: $pale-blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 1fr minmax(567px, 697px) 1fr 30px / 1fr minmax(320px, 450px) 1fr;
+    justify-content: center;
+    align-content: center;
+}
+img {
+    overflow: hidden;
+}
+.card {
+    grid-area: 2 / 2;
+    // margin: 0 auto;
+    width: nimmax(327px,450px);
+    background: white;
+    border-radius: 1rem;
+}
+.attribution {
+    grid-area: 4/2;
+}
