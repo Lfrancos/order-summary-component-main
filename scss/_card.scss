@@ -16,6 +16,8 @@
     h1 {
         font-size: 28px;
         color: $dark-blue;
+        font-family: $font;
+        font-weight: 900;
     }
     p {
         margin: 30px auto;
@@ -38,6 +40,10 @@
             margin: 10px;
             font-weight: 300;
             line-height: 15px;
+            margin-left: 0;
+        }
+        .space {
+            margin-left: 20px;
         }
         .light {
             margin: 0;
@@ -45,11 +51,14 @@
             font-weight: lighter;
             display: flex;
             align-items: center;
+            margin-left: 0;
+            padding-left: 0;
         }
         a {
-            font-weight: lighter;
+            font-weight: 900;
             color: $bright-blue;
             text-decoration: underline;
+
         }
         a:hover {
             color: #766CF1;
@@ -57,7 +66,9 @@
         }
         .dark {
             color: $dark-blue;
-            // font-weight: 400;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
         }
         .music {
             // width: 100%;
@@ -69,13 +80,14 @@
         width: 100%;
         text-align: center;
         background-color: $bright-blue;
+        font-weight: 900;
         color: white;
         padding: 15px;
         border: 0;
         border-radius: .5rem;
         box-shadow: 0 7px 30px -10px #766CF1,
-                    0 20px 40px -20px #766CF1,
-                    0 20px 60px -10px #766CF1;
+                    0 20px 60px -20px #766CF1,
+                    0 20px 90px -10px #766CF1;
     }
     button:hover {
         cursor: pointer;
@@ -83,7 +95,7 @@
     }
     .cancel {
         color: $desaturated-blue;
-        font-weight: 400;
+        font-weight: 900;
     }
     .cancel:hover {
         color: $dark-blue;

@@ -93,6 +93,8 @@ img {
 .card h1 {
   font-size: 28px;
   color: #1f2f56;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
 }
 
 .card p {
@@ -124,6 +126,11 @@ img {
   margin: 10px;
   font-weight: 300;
   line-height: 15px;
+  margin-left: 0;
+}
+
+.card .price .space {
+  margin-left: 20px;
 }
 
 .card .price .light {
@@ -136,10 +143,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .card .price a {
-  font-weight: lighter;
+  font-weight: 900;
   color: #3829e0;
   text-decoration: underline;
 }
@@ -151,6 +160,9 @@ img {
 
 .card .price .dark {
   color: #1f2f56;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 .card .price .music {
@@ -162,12 +174,13 @@ img {
   width: 100%;
   text-align: center;
   background-color: #3829e0;
+  font-weight: 900;
   color: white;
   padding: 15px;
   border: 0;
   border-radius: .5rem;
-  -webkit-box-shadow: 0 7px 30px -10px #766CF1, 0 20px 40px -20px #766CF1, 0 20px 60px -10px #766CF1;
-          box-shadow: 0 7px 30px -10px #766CF1, 0 20px 40px -20px #766CF1, 0 20px 60px -10px #766CF1;
+  -webkit-box-shadow: 0 7px 30px -10px #766CF1, 0 20px 60px -20px #766CF1, 0 20px 90px -10px #766CF1;
+          box-shadow: 0 7px 30px -10px #766CF1, 0 20px 60px -20px #766CF1, 0 20px 90px -10px #766CF1;
 }
 
 .card button:hover {
@@ -177,7 +190,7 @@ img {
 
 .card .cancel {
   color: #7280a7;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .card .cancel:hover {
