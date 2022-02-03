@@ -1,3 +1,11 @@
+
 .attribution {
-    grid-area: 4/2;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+     }
 }
